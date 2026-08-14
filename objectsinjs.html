@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ojects in JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h3>Contact Details:</h3>
+       <h3>Name: </h3>
+       <h3 id="name"></h3>
+       <h3>Phone: </h3>
+       <h3 id="phone"></h3>
+       <h3>City: </h3>
+       <h3 id="city"></h3>
+       <h3>School: </h3>
+       <h3 id="school"></h3>
+       
+
+        <script>
+            var mycontact = {
+                name: "Manahil Sharjeel",
+                phone: "0300-5643765",
+                city: "Karachi",
+                school: "Bahria College Karsaz",
+                country: "Pakistan",
+            }
+            var nameEl = document.getElementById("name");
+            nameEl.textContent = mycontact.name;
+            var phoneEl = document.getElementById("phone");
+            phoneEl.textContent = mycontact.phone;
+            var cityEl = document.getElementById("city");
+            cityEl.textContent = mycontact.city;
+            var schoolEl = document.getElementById("school");
+            schoolEl.textContent = mycontact.school;
+        </script>
+    </body>
+</html>
