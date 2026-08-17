@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML DOM </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h1>Digital Zoo Manager</h1>
+    <p>Following are the updates of the Animals:</p>
+    <div id="zoo">
+
+        <div class="zone" id="lionzone">
+            <h2>Lion Zone</h2>
+            <p>Animal: <span class="animal">Lion</span></p>
+        </div>
+
+        <div class="zone" id="Pandazone">
+            <h2>Panda Zone</h2>
+            <p>Animal: <span class="animal">Panda</span></p>
+        </div>
+
+        <div class="zone" id="flamingozone">
+            <h2>Flamingo Zone</h2>
+            <p>Animal: <span class="animal">Flamingo</span></p>
+        </div>
+    </div>
+
+
+    <button onclick="managezoo()">Manage zoo</button>
+    <script>
+        function managezoo() {
+            document.getElementById("lionzone").innerHTML = "Updated Lion Zone: <br> Lion " + "<br>";
+            document.getElementById("Pandazone").innerHTML = "Updated Panda Zone: <br> Panda "; + "<br>";
+            document.getElementById("flamingozone").innerHTML = "Updated Flamingo Zone <br> Flamingo "; + "<br>";
+
+            let zoo = document.getElementById("zoo");
+            let lionzone = document.getElementById("lionzone");
+            let pandazone = document.getElementById("Pandazone");
+            let flamingozone = document.getElementById("flamingozone");
+            let output = document.getElementById("output");
+
+
+            let parentNodeName = lionzone.parentNode.id;
+
+
+            let firstChildZone = zoo.children[0].id;
+            let secondChildZone = zoo.children[1].id;
+            let nextSiblingZone = lionzone.nextElementSibling.id;
+            let previousSiblingZone = pandazone.previousElementSibling.id;
+
+
+            let elementNodeType = lionzone.nodeType;
+            let textNodeType = lionzone.firstChild.nodeType;
+            lionzone.style.backgroundColor = "#fff3cd";
+            pandazone.style.backgroundColor = "#d1ecf1";
+            flamingozone.style.backgroundColor = "#f8d7da";
+
+        }
+    </script>
+
+</body>
+
+</html>
+</script>
+</body>
+
+</html>
