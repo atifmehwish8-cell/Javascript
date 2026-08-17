@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Array and callstack in JavaScript</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <h2>Object data structure and Array inJavaScript</h2>
+
+        
+       <script>
+        var object = {
+            name: "John",
+            age: "20",
+            city: "New York",
+            Favouritecolor: "Blue",
+            hobbie: "swimming",
+        }
+        
+        var array = ["Green", "blue", "Red", "yellow", "pink", "orange"];
+        document.write("The person's name is  "  +  object.name + "<br>");
+        document.write("John's age is" + object.age + "<br>");
+        document.write("Before popping the array is " + array.join(","));
+        document.write("<br>");
+        document.write("John's Favourite color is" + array[1] + "<br>");
+        array.pop();
+        document.write("After popping the array is" + array.join(","));
+       </script>
+    </body>
+</html>
